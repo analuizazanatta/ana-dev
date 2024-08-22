@@ -7,20 +7,38 @@
 # Criação de uma lista simples:     
 # (1) Crie uma lista chamada frutas contendo as seguintes frutas: "maçã", "banana", "laranja", "uva". Exiba a lista completa.
 
+
+frutas = ["maçã", "banana", "laranja", "uva" ]
+print(frutas)
+
+
 # Acessando elementos de uma lista:
 # (2) A partir da lista frutas, acesse e exiba o segundo e o último elemento.
+
+
 
 # Modificando elementos da lista:
 # (3) Substitua o primeiro elemento da lista frutas por "abacaxi". Exiba a lista modificada.
 
+frutas[0] = 'abacaxi'
+print(frutas)
+
 # Adicionando elementos à lista:
 # (4) Adicione "manga" ao final da lista frutas. Em seguida, adicione "morango" na posição 2. Exiba a lista resultante.
+
+frutas.append('manga')
+frutas.insert(1, 'morango')
+print(frutas)
 
 # Removendo elementos da lista:
 # (5) Remova "banana" da lista frutas. Exiba a lista após a remoção.
 
+frutas.remove('banana')
+print(frutas)
+
 # Tamanho da lista:
 # (6) Escreva um código que conte e exiba quantos elementos há na lista frutas.
+
 
 # Concatenando listas:
 # (7) Crie uma nova lista chamada legumes com os elementos "cenoura", "batata", "abobrinha". 
