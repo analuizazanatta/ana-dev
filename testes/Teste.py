@@ -31,6 +31,7 @@ def maior_de_idade(idade: int):
 #     'altura': 1.60
 # }
 
+pessoas = []
 while True:
     print('Cadastro de pessoas com gênero válido e maiores de idade')
 
@@ -39,12 +40,12 @@ while True:
     idade = int(input('Idade da pessoa: '))
     if not maior_de_idade(idade=idade):
         print('Menor de idade!!!!')
-        break
+        continue
 
     genero = input('Gênero da pessoa: ')
     if not genero_valido(genero=genero):
         print('Gênero inválido!!!!')
-        break
+        continue
 
     altura = float(input('Altura da pessoa: '))
 
@@ -55,4 +56,9 @@ while True:
         'altura': altura     
     }
 
-    print(pessoa)
+    pessoas.append(pessoa)
+
+    if len(pessoas) > 4:
+        break    
+
+print(pessoas)

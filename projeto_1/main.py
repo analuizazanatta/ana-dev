@@ -1,7 +1,7 @@
 
 # Sistema de despesas
 
-# - Criar e excluir CATEGORIAS (nome)
+# - [OK] Criar e excluir CATEGORIAS (nome)
 # - Criar e excluir PESSOAS (nome e saldo)
 # - Criar e excluir DESPESAS (nome, valor, data, categoria, pagador[pessoa])
 
